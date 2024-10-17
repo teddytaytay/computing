@@ -9,11 +9,10 @@ while True:
         continue
 while True:
     password = input("Please enter a password: ")
-    if not password.alnum():
+    if "1" or "2" or "3" or "4" or "5" or "6" or "7" or "8" or "9" or "0" not in password:
         print("Please include at least 1 numeric character.")
         continue
-    spc_char_list = ["@", "!", "/", "?"]
-    if spc_char_list not in password:
+    if "@" or "!" or "/" or "?" not in password:
         print("Please include at least 1 special character (@!/?).")
         continue 
     if password.length() < 8:
